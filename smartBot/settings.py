@@ -16,6 +16,8 @@ import dj_database_url
 import psycopg2
 #import django.contrib.gis.gdal.raster.source.GDALRaster
 import django.contrib.gis.gdal
+from os import environ
+
 class GDALRasterMock(object):
     pass
 django.contrib.gis.gdal.GDALRaster = GDALRasterMock
@@ -35,7 +37,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-GDAL_LIBRARY_PATH = 'C:/Users/Geko/Desktop/release-1800-gdal-1-11-4-mapserver-6-4-3/bin/gdal111.dll'
+
+
+GEOS_LIBRARY_PATH = environ.get('GEOS_LIBRARY_PATH')
+GDAL_LIBRARY_PATH = environ.get('GDAL_LIBRARY_PATH')
 
 # Application definition11
 
@@ -94,10 +99,10 @@ WSGI_APPLICATION = 'smartBot.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'smartBot',                      # Or path to database file if using sqlite3.
-        'USER': 'pguser',                      # Not used with sqlite3.
-        'PASSWORD': 'pguser',                  # Not used with sqlite3.
-        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'NAME': 'dd881rb4gfnrdj',                      # Or path to database file if using sqlite3.
+        'USER': 'uf7826e3q95ll4',                      # Not used with sqlite3.
+        'PASSWORD': 'pdebd811a80e08e209301b9216562076b103cda9e3460b3e5beee4d86a5a5833a',                  # Not used with sqlite3.
+        'HOST': 'ec2-34-228-178-74.compute-1.amazonaws.com',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '5432',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
