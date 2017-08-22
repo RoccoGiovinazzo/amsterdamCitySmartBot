@@ -37,7 +37,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-GEOS_LIBRARY_PATH = environ.get('./smartbot/lib/gdal/bin/geos_c.dll')
+print(BASE_DIR)
+print(BASE_DIR + '/smartbot/lib/gdal/bin/geos_c.dll')
+GEOS_LIBRARY_PATH = BASE_DIR + '/smartbot/lib/gdal/bin/geos_c.dll'
 # GDAL_LIBRARY_PATH = "{}/libgdal.so".format(environ.get('GDAL_LIBRARY_PATH'))
 # PROJ4_LIBRARY_PATH = "{}/libproj.so".format(environ.get('PROJ4_LIBRARY_PATH'))
 
