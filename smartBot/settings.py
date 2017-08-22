@@ -38,8 +38,8 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 print("---------------------------------------------BASEDIR---------------------------------------------")
 print(BASE_DIR)
-print(BASE_DIR + '/smartbot/lib/gdal/bin/geos_c.dll')
-GEOS_LIBRARY_PATH = BASE_DIR + '/smartbot/lib/gdal/bin/geos_c.dll'
+print(BASE_DIR + '/.heroku/smartbot/lib/gdal/bin/geos_c.dll')
+GEOS_LIBRARY_PATH = BASE_DIR + '/.heroku/smartbot/lib/gdal/bin/geos_c.dll'
 print("---------------------------------------------BASEDIR---------------------------------------------")
 # GDAL_LIBRARY_PATH = "{}/libgdal.so".format(environ.get('GDAL_LIBRARY_PATH'))
 # PROJ4_LIBRARY_PATH = "{}/libproj.so".format(environ.get('PROJ4_LIBRARY_PATH'))
