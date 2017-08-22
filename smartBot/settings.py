@@ -39,8 +39,8 @@ ALLOWED_HOSTS = ['*']
 
 
 
-#GEOS_LIBRARY_PATH = environ.get('/smartbot/bot/static/geos/geos_c.dll')
-#GDAL_LIBRARY_PATH = environ.get('GDAL_LIBRARY_PATH')
+GEOS_LIBRARY_PATH = environ.get('/smartbot/bot/static/geos/geos_c.dll')
+GDAL_LIBRARY_PATH = environ.get('GDAL_LIBRARY_PATH')
 
 # Application definition11
 
