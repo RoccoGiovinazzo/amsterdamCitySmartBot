@@ -16,7 +16,7 @@ import dj_database_url
 import psycopg2
 #import django.contrib.gis.gdal.raster.source.GDALRaster
 import django.contrib.gis.gdal
-from os import environ
+#from os import environ
 
 class GDALRasterMock(object):
     pass
@@ -37,10 +37,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-
-GEOS_LIBRARY_PATH = "{}/libgeos_c.so".format(environ.get('GEOS_LIBRARY_PATH'))
-GDAL_LIBRARY_PATH = "{}/libgdal.so".format(environ.get('GDAL_LIBRARY_PATH'))
-PROJ4_LIBRARY_PATH = "{}/libproj.so".format(environ.get('PROJ4_LIBRARY_PATH'))
+# GEOS_LIBRARY_PATH = "{}/libgeos_c.so".format(environ.get('GEOS_LIBRARY_PATH'))
+# GDAL_LIBRARY_PATH = "{}/libgdal.so".format(environ.get('GDAL_LIBRARY_PATH'))
+# PROJ4_LIBRARY_PATH = "{}/libproj.so".format(environ.get('PROJ4_LIBRARY_PATH'))
 
 # Application definition11
 
