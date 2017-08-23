@@ -6,8 +6,9 @@ def createMultiPolygon(name, polygon, prices):
     multiPolygon.name = name
     multiPolygon.poly = polygon
     multiPolygon.description = prices
-    multiPolygon.save()
     
+    multiPolygon.save()
+    print("----------- HO SALVATO IL POLIGONO: " + name + " -----------" )
     
 def getMultiPolygon(name):
     multiPolygon = MultiPolygon.objects.get(name=name)
