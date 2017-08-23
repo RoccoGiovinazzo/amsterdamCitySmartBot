@@ -37,10 +37,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-GEOS_LIBRARY_PATH = environ.get('.heroku/vendor/lib/libgeos_c.so')
-GDAL_LIBRARY_PATH = environ.get('.heroku/vendor/lib/libgdal.so')
+# GEOS_LIBRARY_PATH = environ.get('.heroku/vendor/lib/libgeos_c.so')
+# GDAL_LIBRARY_PATH = environ.get('.heroku/vendor/lib/libgdal.so')
 #PROJ4_LIBRARY_PATH = '.heroku/vendor/lib/libproj.so' 
-
+GEOS_LIBRARY_PATH = os.getenv('.heroku/vendor/lib/libgeos_c.so')
+GDAL_LIBRARY_PATH = os.getenv('.heroku/vendor/lib/libgdal.so')
 # Application definition11
 
 INSTALLED_APPS = [
