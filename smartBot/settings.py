@@ -37,7 +37,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-GEOS_LIBRARY_PATH= '.heroku/python/lib/python3.5/site-packages/geos'
+GEOS_LIBRARY_PATH= '.heroku/vendor/lib/libgeos_c.so'
 # GDAL_LIBRARY_PATH=BASE_DIR + '/lib/gdal/lib/libgdal.so'
 # PROJ4_LIBRARY_PATH = "{}/libproj.so".format(environ.get('PROJ4_LIBRARY_PATH'))
 
