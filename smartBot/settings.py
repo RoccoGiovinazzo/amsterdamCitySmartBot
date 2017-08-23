@@ -36,12 +36,7 @@ SECRET_KEY = 'qiiobvi4f1!h7^3^q_0%@)me5g3k&-wg2ydq#(^fepraf(8h+8'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-print("---------------------------------------------BASEDIR---------------------------------------------")
-print(BASE_DIR)
-print(BASE_DIR + '/smartbot/smartbot/lib/gdal/bin/geos_c.dll')
-#GEOS_LIBRARY_PATH = BASE_DIR + '/smartbot/smartbot/lib/gdal/bin/geos_c.dll'
- #GEOS_LIBRARY_PATH = BASE_DIR + '/.geodjango'
-print("---------------------------------------------BASEDIR---------------------------------------------")
+
 GEOS_LIBRARY_PATH= BASE_DIR + '/lib/geos/lib/libgeos_c.so'
 GDAL_LIBRARY_PATH=BASE_DIR + '/lib/gdal/lib/libgdal.so'
 # PROJ4_LIBRARY_PATH = "{}/libproj.so".format(environ.get('PROJ4_LIBRARY_PATH'))
