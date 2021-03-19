@@ -35,7 +35,7 @@ googlemaps==2.4.6
 gunicorn==19.7.1
 heroku==0.1.4
 itsdangerous==0.24
-Jinja2==2.9.5
+Jinja2==2.11.3
 lxml==3.8.0
 MarkupSafe==1.0
 matplotlib==2.0.2
